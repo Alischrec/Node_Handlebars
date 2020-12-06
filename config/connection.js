@@ -1,19 +1,4 @@
-const express = require("express");
-const exphbs = require("express-handlebars");
 const mysql = require("mysql");
-
-const app = express();
-
-const PORT = process.env.PORT || 8080;
-
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-app.use(express.static("public"));
-
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -23,7 +8,7 @@ const connection = mysql.createConnection({
   database: "burger_db"
 });
 
-connection.connect(function(err) {
+connection.connect((err) => {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
@@ -32,4 +17,4 @@ connection.connect(function(err) {
 });
 
 // Export connection
-module.exports = connection;
+module.exports = connection; 

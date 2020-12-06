@@ -1,4 +1,5 @@
 const express = require("express");
+const exphbs = require("express-handlebars");
 
 // Sets up the Express App
 const app = express();
@@ -9,7 +10,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory to be served
-app.use(express.static("app/public"));
+app.use(express.static("public"));
 
-require("./app/routes/api-routes.js")(app);
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
+app.use(require("./controllers/burger_controller.js"))
+
+app.listen(PORT, () => {
+    console.log("Server listening on: http://localhost:" + PORT);
+});
