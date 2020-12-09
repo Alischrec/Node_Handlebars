@@ -1,5 +1,29 @@
+{{!-- Burger Image --}}
+<div>
+    <img src='/assets/images/burger.png'>
+</div>
 
+{{!-- List for Current Burgers: --}}
+<div id='currentBurgers'>
+    <ul>
+        
+    </ul>
+</div>
 
+{{!-- List for Devoured Burgers --}}
+<div id='devouredBurgers'>
+    <ul>
+        
+    </ul>
+</div>
 
+{{!-- Submit a New Burger --}}
+<div id="newBurger">
+    <form action="/burger/new" method="post">
+        <input type="text" id="burgerName" name="burgerName"><br><br>
+        <button type="button" class="btn btn-primary">Submit</button>
+        <p>Enter a burger you want to eat, then click the "Submit" button</p>
+    </form>
+</div>
 
 <script type="text/javascript"></script>

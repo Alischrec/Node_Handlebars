@@ -6,7 +6,7 @@ const models = require("../models/burger");
 const router = express.Router()
 
 router.get('/', (req, res) => {
-
+    res.render('index', {})
 })
 
 module.export = router;
