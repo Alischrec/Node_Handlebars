@@ -6,7 +6,7 @@ const models = require("../models/burger");
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.render('index', {})
+    res.render('index', {burger: 'random'})
 })
 
-module.export = router;
+module.exports = router;

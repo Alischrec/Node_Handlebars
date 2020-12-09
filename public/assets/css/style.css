@@ -1,4 +1,15 @@
 body {
-    background-color: #FFCA65;
+    background-color: #FFCD69;
+    text-align: center;
 }
 
+/* #currentBurgers{
+}
+
+#devouredBurgers{
+} */
+
+#burgerName {
+    padding-bottom: 40px;
+    padding-right: 40px;
+}

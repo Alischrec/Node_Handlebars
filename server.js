@@ -15,11 +15,10 @@ app.use(express.static("public"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// const route = require("./controllers/burger_controller.js")
+// const router = require("./controllers/burger_controller.js")
+// app.use(router)
 
-// app.use(route)
-
-app.use(require("./controllers/burger_controller.js"))
+app.use(require("./controllers/burger_controller.js"));
 
 app.listen(PORT, () => {
     console.log("Server listening on: http://localhost:" + PORT);

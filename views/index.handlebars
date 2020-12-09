@@ -3,27 +3,36 @@
     <img src='/assets/images/burger.png'>
 </div>
 
-{{!-- List for Current Burgers: --}}
-<div id='currentBurgers'>
-    <ul>
-        
-    </ul>
-</div>
+<div class='row'>
+    {{!-- List for Current Burgers: --}}
+    <div class="col-md-6" id='currentBurgers'>
+        <ul>
+            <h1> COLUMN 1</h1>
 
-{{!-- List for Devoured Burgers --}}
-<div id='devouredBurgers'>
-    <ul>
-        
-    </ul>
+            {{!-- {{#each}}
+
+        {{/each}} --}}
+        </ul>
+    </div>
+
+    {{!-- List for Devoured Burgers --}}
+    <div class="col-md-6" id='devouredBurgers'>
+        <ul>
+            <h1> COLUMN 2</h1>
+            {{!-- {{#each}}
+
+        {{/each}} --}}
+        </ul>
+    </div>
 </div>
 
 {{!-- Submit a New Burger --}}
-<div id="newBurger">
-    <form action="/burger/new" method="post">
-        <input type="text" id="burgerName" name="burgerName"><br><br>
-        <button type="button" class="btn btn-primary">Submit</button>
-        <p>Enter a burger you want to eat, then click the "Submit" button</p>
+<div id='newBurger'>
+    <form action='/burger/new' method='post'>
+        <input type='text' id='burgerName' name='burgerName'><br><br>
+        <button type='button' class='btn btn-primary'>Submit</button>
+        <p>Enter a burger you want to eat, then click the 'Submit' button</p>
     </form>
 </div>
 
-<script type="text/javascript"></script>
+<script type='text/javascript'></script>
