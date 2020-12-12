@@ -19,20 +19,20 @@ Explore the [Project Page](https://github.com/Alischrec/Node_Handlebars)
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project:
-<!-- The focus of this project was to architect and build a solution for managing a company's employees using node, inquirer, and MySQL. -->
+The focus of this project was to build a server-based application to create and devour food using node, express, handlebars, and MySQL.
 
-<!-- ![Project Gif](gif.gif) -->
+<!-- ![Project Gif](/assets/images/gif.gif) -->
 
 ### JavaScript:
-<!-- * [index.js](https://github.com/Alischrec/Node_Handlebars/tree/main/index.js) -->
+* [server.js](https://github.com/Alischrec/Node_Handlebars/tree/main/server.js)
 
 
 ### Assets:
-<!-- * [Database](https://github.com/Alischrec/Node_Handlebars/tree/main/schema.sql)
-* [Seed](https://github.com/Alischrec/Node_Handlebars/tree/main/seed.sql) -->
+* [Database](https://github.com/Alischrec/Node_Handlebars/tree/main/db/schema.sql)
+* [Seed](https://github.com/Alischrec/Node_Handlebars/tree/main/db/seed.sql)
 
 ### Built With:
-<!-- * This app is build upon [Node.js](https://nodejs.org/en/), [Inquirer](https://www.npmjs.com/package/inquirer/v/0.2.3), [MySQL](https://www.npmjs.com/package/mysql), [Console.table](https://www.npmjs.com/package/console.table), and the [Heroku](https://dashboard.heroku.com/apps) application. -->
+* This app is build upon [Node.js](https://nodejs.org/en/), [MySQL](https://www.npmjs.com/package/mysql), [Express](https://expressjs.com/), [Express-handlebars](https://handlebarsjs.com/), and the [Heroku](https://dashboard.heroku.com/apps) application.
 
 ## Getting Started:
 To get a local copy up and running follow the steps below.

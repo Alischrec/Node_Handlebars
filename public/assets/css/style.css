@@ -7,3 +7,20 @@ body {
     padding-bottom: 40px;
     padding-right: 200px;
 }
+
+#currentBurgers {
+ padding-left: 400px;
+}
+
+#devouredBurgers {
+    padding-right: 400px;
+
+}
+
+h2 {
+    color: #E83F03;
+}
+
+h5 {
+    padding-right: 10px;
+}

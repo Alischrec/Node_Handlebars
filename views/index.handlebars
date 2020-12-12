@@ -6,14 +6,15 @@
 <div class='row'>
     {{!-- List for Current Burgers: --}}
     <div class='col-md-6' id='currentBurgers'>
+        <h2> Current Burgers: </h2>
+        <br>
         <ul>
-
             {{#each burgers}}
             {{#unless devoured}}
 
-            <h4> {{burger_name}} </h4>
-            <form action='/api/burger/devoured' method='post'>
-                <button id='indexButton' type='submit' name='devoured' class='btn btn-primary' value='{{id}}'>Devour</button>
+            <form class='form-inline' action='/api/burger/devoured' method='post'>
+            <h5> {{burger_name}} </h5>
+                <button id='indexButton' type='submit' name='devoured' class='btn btn-light btn-sm' value='{{id}}'>Devour</button>
             </form>
 
             {{/unless}}
@@ -24,12 +25,14 @@
 
     {{!-- List for Devoured Burgers --}}
     <div class='col-md-6' id='devouredBurgers'>
+        <h2> Devoured Burgers: </h2>
+        <br>
         <ul>
 
             {{#each burgers}}
             {{#if devoured}}
 
-            <h4> {{burger_name}} </h4>
+            <h5> {{burger_name}} </h5>
             </form>
 
             {{/if}}
