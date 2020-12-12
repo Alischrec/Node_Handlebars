@@ -21,7 +21,7 @@ Explore the [Project Page](https://github.com/Alischrec/Node_Handlebars)
 ## About the Project:
 The focus of this project was to build a server-based application to create and devour food using node, express, handlebars, and MySQL.
 
-<!-- ![Project Gif](/assets/images/gif.gif) -->
+![Project Gif](/assets/images/gif.gif)
 
 ### JavaScript:
 * [server.js](https://github.com/Alischrec/Node_Handlebars/tree/main/server.js)
