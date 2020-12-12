@@ -5,34 +5,45 @@
 
 <div class='row'>
     {{!-- List for Current Burgers: --}}
-    <div class="col-md-6" id='currentBurgers'>
+    <div class='col-md-6' id='currentBurgers'>
         <ul>
-            <h1> COLUMN 1</h1>
 
-            {{!-- {{#each}}
+            {{#each burgers}}
+            {{#unless devoured}}
 
-        {{/each}} --}}
+            <div> {{burger_name}} </div>
+            <form action='/api/burger/devoured' method='post'>
+                <button type='submit' name='devoured' class='btn btn-primary' value='{{id}}'>Devour</button>
+            </form>
+
+            {{/unless}}
+            {{/each}}
+
         </ul>
     </div>
 
     {{!-- List for Devoured Burgers --}}
-    <div class="col-md-6" id='devouredBurgers'>
+    <div class='col-md-6' id='devouredBurgers'>
         <ul>
-            <h1> COLUMN 2</h1>
-            {{!-- {{#each}}
 
-        {{/each}} --}}
+            {{#each burgers}}
+            {{#if devoured}}
+
+            <div> {{burger_name}} </div>
+            </form>
+
+            {{/if}}
+            {{/each}}
+
         </ul>
     </div>
 </div>
 
 {{!-- Submit a New Burger --}}
 <div id='newBurger'>
-    <form action='/burger/new' method='post'>
+    <form id='burgerForm' action='/api/burger/new' method='post'>
         <input type='text' id='burgerName' name='burgerName'><br><br>
-        <button type='button' class='btn btn-primary'>Submit</button>
+        <button type='submit' class='btn btn-primary'>Submit</button>
         <p>Enter a burger you want to eat, then click the 'Submit' button</p>
     </form>
 </div>
-
-<script type='text/javascript'></script>

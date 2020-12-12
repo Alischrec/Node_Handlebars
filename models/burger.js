@@ -8,6 +8,6 @@ module.exports.getAll = (cb) => {
     orm.selectAll('burger', cb);
 }
 
-module.exports.devoureBurger = (burgerId, cb) => {
+module.exports.devouredBurger = (burgerId, cb) => {
     orm.updateOne('burger', burgerId, {devoured: true}, cb)
 }
