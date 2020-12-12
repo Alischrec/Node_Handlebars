@@ -11,9 +11,9 @@
             {{#each burgers}}
             {{#unless devoured}}
 
-            <div> {{burger_name}} </div>
+            <h4> {{burger_name}} </h4>
             <form action='/api/burger/devoured' method='post'>
-                <button type='submit' name='devoured' class='btn btn-primary' value='{{id}}'>Devour</button>
+                <button id='indexButton' type='submit' name='devoured' class='btn btn-primary' value='{{id}}'>Devour</button>
             </form>
 
             {{/unless}}
@@ -29,7 +29,7 @@
             {{#each burgers}}
             {{#if devoured}}
 
-            <div> {{burger_name}} </div>
+            <h4> {{burger_name}} </h4>
             </form>
 
             {{/if}}
